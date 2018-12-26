@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "小虾米旅行手册",
+  "usingComponents":{
+    "br":"../../components/br"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/city/city",
+    "pages/loved/loved",
+    "pages/index/index",
+    
+    "pages/trip/trip"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小虾米旅行手册",
+    "navigationBarTextStyle":"black"
+  },
+    "tabBar": {
+      "color": "#666",
+      "selectedColor": "#333",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath": "images/index.png",
+          "selectedIconPath": "images/index_sel.png"
+        },
+        {
+          "pagePath": "pages/city/city",
+          "text": "城市",
+          "iconPath": "images/city.png",
+          "selectedIconPath": "images/city_sel.png"
+        },
+        {
+          "pagePath": "pages/loved/loved",
+          "text": "收藏",
+          "iconPath": "images/loved.png",
+          "selectedIconPath": "images/loved_sel.png"
+        }
+      ]
+    }
+}

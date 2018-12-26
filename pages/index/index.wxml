@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="img_box">
+    <image src="http://www.sgmacwx.top/cwx/img/home_bg1.jpg"></image>
+  </view>
+  <view class="home_font">
+    旅行的意义 <br/>在于不断去探索未知的领域
+  </view>
+</view>

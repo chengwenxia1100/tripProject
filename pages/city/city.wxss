@@ -1,0 +1,115 @@
+/* pages/city/city.wxss */
+.city_bg{
+  width:100%;
+}
+.section{
+  position:absolute;
+  top:70px;
+  left:50%;
+  margin-left:-30px;
+}
+.section .picker{
+  color:#fff;
+  font-size:20px;
+}
+.city_contain{
+  background:#eaeaea;
+  border-radius: 10px;
+  margin-top:-10px;
+  z-index:999;
+  padding:15px;
+  width:100%;
+  box-sizing: border-box;
+}
+
+.city_research .tit,.city_history .tit{
+  font-size:22px;
+  color:#333;
+  margin-bottom:15px;
+}
+
+.reacher_list_con{
+  display: table;
+  width:100%;
+}
+.list_module{
+  display: table-cell;
+  border-bottom:3px #eaeaea solid;
+  border-right:3px #eaeaea solid;
+  background-size:100% 100%
+}
+
+.intro_text{
+  padding:30px 0 10px 0;
+}
+.intro_text {
+  padding-left:10px;
+  color:#fff;
+}
+.intro_text text{
+  display: block;
+}
+.intro_text .txt1{
+  font-size:16px;
+}
+.intro_text .txt2{
+  font-size:14px;
+}
+
+
+.city_history{
+  margin-top:10px;
+  padding-top:5px;
+  border-top:1px #dadada solid;
+}
+
+.history_content{
+  clear:both;
+  overflow: hidden;
+  width:100%;
+}
+.history_content .left,.history_content .right{
+  width:49%;
+}
+
+.history_content .left{
+  float:left;
+}
+.history_content .right{
+  float:right;
+}
+.history_item{
+  display: inline-block;
+  background:#fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width:100%;
+}
+.item-img{
+  width:100%;
+  border-radius: 10px 10px 0 0 ;
+}
+.item-title{
+  padding:10px;
+  font-size: 14px;
+  font-family: 'PingFang SC-Medium';
+  color: #1e1e1e;
+}
+.item-ava{
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  float:left;
+  margin-right:10px;
+}
+.history_auth_name{
+  padding:0 0 10px 10px;
+}
+.name-title{
+  font-size:12px;
+  font-family: 'PingFang SC-Medium';
+  color: #1e1e1e;
+  display: block;
+}
+
+

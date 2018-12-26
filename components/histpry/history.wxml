@@ -1,0 +1,17 @@
+<!--components/histpry/history.wxml-->
+
+<template name="m-history" class="history_item">
+
+  <view class="history_item">
+    <image class="item-img" src="{{trip.data[0].cover_image}}" mode="widthFix"></image>
+    <view class="item-title-box">
+      <view url="url" class="item-title">{{trip.data[0].name}}</view> 
+    </view>
+    <view class="history_auth_name">
+      <image class="item-ava" src="{{trip.data[0].cover_image_default}}"></image>    
+      <text class="name-title">{{trip.desc}}</text>
+      <text class="name-title">2018-12-1</text>
+    </view>
+  </view>
+
+</template>

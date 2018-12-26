@@ -1,0 +1,7 @@
+/**index.wxss**/
+.img_box{
+  padding:20px 0;
+}
+.img_box image{
+  
+}

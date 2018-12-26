@@ -1,0 +1,80 @@
+<!--pages/city/city.wxml-->
+<import src="../../components/histpry/history.wxml"/>
+
+<view class="container" >
+  <image src="{{cityarray[index].cityimage}}" class="city_bg"></image>
+  <view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        {{array[index]}} 
+        <image src="../../images/select_icon.png" style="width:8px;height:8px;"></image>
+      </view>
+    </picker>
+  </view>
+  <view class="city_contain" >
+    <view class="city_research">
+      <view class="tit">攻略{{cityarray[index].cityname}}</view>
+      <view class="reacher_list">
+        <view class="reacher_list_con">
+          <view class="list_module" style="width:66.6%; background:url({{cityarray[index].reachers[0].bgimg}}) no-repeat center;" bindtap="goTrip" data-id="{{ cityarray[index].reachers[0].cityid }}" data-name="小虾米的旅行手册">
+            <view class="intro_text">
+              <text class="txt1">{{cityarray[index].reachers[0].txt1}}</text>
+              <text class="txt2">{{cityarray[index].reachers[0].txt2}}</text>
+            </view>  
+          </view>
+          <view class="list_module" style="width:33.3%;background:url({{cityarray[index].reachers[1].bgimg}}) no-repeat center;" bindtap="goTrip" data-id="{{ cityarray[index].reachers[0].cityid }}" data-name="小虾米的旅行手册" >
+            <view class="intro_text">
+              <text class="txt1">{{cityarray[index].reachers[1].txt1}}</text>
+              <text class="txt2">{{cityarray[index].reachers[1].txt2}}</text>
+            </view>  
+          </view>
+        
+        </view>
+        <view class="reacher_list_con">
+          <view class="list_module" style="width:33.3%;background:url({{cityarray[index].reachers[2].bgimg}}) no-repeat center;" bindtap="goTrip" data-id="{{ cityarray[index].reachers[0].cityid }}" data-name="小虾米的旅行手册">
+            <view class="intro_text">
+              <text class="txt1">{{cityarray[index].reachers[2].txt1}}</text>
+              <text class="txt2">{{cityarray[index].reachers[2].txt2}}</text>
+            </view>  
+          </view>
+          <view class="list_module" style="width:33.3%;background:url({{cityarray[index].reachers[3].bgimg}}) no-repeat center;" bindtap="goTrip" data-id="{{ cityarray[index].reachers[0].cityid }}" data-name="小虾米的旅行手册" >
+            <view class="intro_text">
+              <text class="txt1">{{cityarray[index].reachers[3].txt1}}</text>
+              <text class="txt2">{{cityarray[index].reachers[3].txt2}}</text>
+            </view>  
+          </view>
+          <view class="list_module" style="width:33.3%;background:url({{cityarray[index].reachers[4].bgimg}}) no-repeat center;" bindtap="goTrip" data-id="{{ cityarray[index].reachers[0].cityid }}" data-name="小虾米的旅行手册">
+            <view class="intro_text">
+              <text class="txt1">{{cityarray[index].reachers[4].txt1}}</text>
+              <text class="txt2">{{cityarray[index].reachers[4].txt1}}</text>
+            </view>  
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="city_history">
+      <view class="tit">旅行故事</view>
+      
+        <view class="history_content">
+        
+        <scroll-view scroll-y="true"  style="height: {{ windowHeight }}px; width: {{ windowWidth }}px;" bindscrolltolower="loadMore" >
+          <view class="left">
+            <view wx:for="{{trips}}" wx:for-item="item" wx:key="" >
+              <template is="m-history"  wx:if="{{index%2==0}}" data="{{ trip : item}}" />
+            </view>
+          </view>
+    
+      
+          <view class="right">
+            <view wx:for="{{trips}}" wx:for-item="item" wx:key="">
+              <template is="m-history"  wx:if="{{index%2==1}}" data="{{ trip : item}}" />
+            </view>
+          </view>
+        </scroll-view>
+
+        </view>
+        
+    </view>
+
+  </view> 
+</view>
